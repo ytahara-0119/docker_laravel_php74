@@ -44,7 +44,7 @@ cp .env.example .env
 
 `docker-compose up -d --build`
 
-### 3. sshで接続
+### 3. sshでworkコンテナに接続
 
 `docker-compose exec work bash`
 
@@ -77,7 +77,6 @@ npm install
 ```
 php artisan migrate
 ```
-その他DBインポートしておく
 
 ### 4. hosts設定(任意)
 
@@ -91,7 +90,7 @@ php artisan migrate
 ```
 composer dump-autoload
 ```
-
+### 6. 環境ができたかURLで確認してみる
 https://xxxxxxxxx
 
 
@@ -116,7 +115,7 @@ https://xxxxxxxxx
 [3]:https://qiita.com/Diwamoto/items/b9e6d61fb19a16eec871
 
 
-
+## キャッシュクリア関連
 ```
 php artisan clear-compiled  
 php artisan view:clear  
