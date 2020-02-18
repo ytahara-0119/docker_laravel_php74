@@ -8,6 +8,8 @@ services:
       - ./cert:/etc/ssl/cert
       - ${PROJECT_PATH}:/var/www/html:cached
       - node_modules:/var/www/html/node_modules
+      - .docker_bash_history:/root/.bash_history
+      - .docker_bashrc:/root/.bashrc
     ports:
       - ${WEB_PORT}:80
       - ${WEB_SSL_PORT}:443
